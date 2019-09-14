@@ -5,30 +5,48 @@ var treeData =
     "parent": "null",
     "children": [
       {
-        "name": "Level 2: A",
+        "name": "Buy Dev Machines",
         "parent": "Start Company",
         "children": [
           {
-            "name": "Buy Machines",
-            "parent": "Level 2: A"
+            "name": "Set up a VCS",
+            "parent": "Buy Dev Machines"
           },
           {
-            "name": "Deployment",
-            "parent": "Level 2: A"
+            "name": "Manually Deploy Code",
+            "parent": "Buy Dev Machines",
+            "children": [
+              {
+                "name": "Write a script to deploy",
+                "parent": "Manually Deploy Code",
+                "children": [
+                  {
+                    "name": "Deploy from CI tool",
+                    "parent": "Write a script to deploy"
+                  }
+                ]
+              }
+            ]
           },
           {
-            "name": "Process",
-            "parent": "Level 2: A"
+            "name": "Write Unit Tests",
+            "parent": "Buy Dev Machines"
           },
           {
-            "name": "Deployment",
-            "parent": "Level 2: A"
+            "name": "Do code reviews",
+            "parent": "Buy Dev Machines"
           }
         ]
       },
       {
-        "name": "Level 2: B",
-        "parent": "Start Company"
+        "name": "Write a todo",
+        "parent": "Start Company",
+        "children": [
+          {
+            "name": "Run sprints",
+            "parent": "Write a todo"
+          }
+        ]
       }
     ]
   }
